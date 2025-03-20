@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+    margin: 0;
+}
+
+.logo span {
+    color: #7d2ae8;
+}
+
+.navigation {
+    margin-left: -300px;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #7d2ae8;
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.top_header_panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 25px;
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a i {
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.social-icons .share-profile i {
+    font-size: 16px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.top-logo {
+    background: #201f31;
+    padding: 10px 15px;
+    border-radius: 0;
+    position: relative;
+}
+
+.share-profile:hover {
+    background: red;
+    color: #fff;
+}
+
+.share-profile {
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 7px 14px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.brand_logo ul {
+    margin: 20px auto 0;
+    padding: 0;
+    text-align: center;
+}
+.brand_logo ul li {
+    list-style: none;
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+    border: 1px solid #d7d7d7;
+}
+.brand_logo ul li img {
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    width: 100%;
+}
+
+.gcm-profile.veerangana .brand_logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.gcm-profile.veerangana .brand_logo li {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 90px;
+}
+
+.profile-pic img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    border: 7px solid #fff;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin: 0 auto 10px;
+    z-index: 1;
+    background: #fff;
+    position: relative;
+}
+
+.gcm-profile {
+    text-align: left;
+    background: #d3a246b3;
+    padding: 30px 30px 30px;
+    position: relative;
+    background: hsl(210deg 19% 33% / 70%);
+    -webkit-animation: bg 5s infinite alternate;
+    -moz-animation: bg 5s infinite alternate;
+    -o-animation: bg 5s infinite alternate;
+    animation: bg 5s infinite alternate;
+    background-image: url(malavmistry.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+@-webkit-keyframes bg {
+    0% {
+        background: #984D6Fb3;
+    }
+
+    100% {
+        background: #435363b3;
+    }
+}
+
+@-moz-keyframes bg {
+    0% {
+        background: #984D6Fb3;
+    }
+
+    100% {
+        background: #435363b3;
+    }
+}
+
+@-o-keyframes bg {
+    0% {
+        background: #984D6Fb3;
+    }
+
+    100% {
+        background: #435363b3;
+    }
+}
+
+@keyframes bg {
+    0% {
+        background: #984D6F;
+    }
+
+    100% {
+        background: #435363;
+    }
+}
+
+.gcm-profile h2 i {
+    font-weight: 300;
+}
+
+.gcm-profile>h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.gcm-profile span {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    text-transform: CAPITALIZE;
+}
+
+.gcm-profile p {
+    color: #fff;
+}
+
+.gcm-social ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.gcm-social ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.gcm-social ul li a {
+    color: #fff;
+    font-size: 23px;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.gcm-social ul li:hover a {
+    background: #201f31;
+}
+
+
+
+.add-to-contact {
+    margin-top: 80px;
+}
+
+.add-to-contact .btn {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: #dc3545;
+    border: none;
+    font-weight: 700;
+}
+
+.gcm-content {
+    padding: 30px 30px 30px;
+}
+
+
+.accordion-header button {
+    font-weight: bold;
+    padding: 18px 0px;
+    border-bottom: 1px solid #D38312;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border-color: #D38312;
+    background: transparent;
+    color: #D38312;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23D38312'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+.accordion-body ul {
+    padding-left: 10px;
+}
+.footer-image {
+    padding: 0 20px;
+}
