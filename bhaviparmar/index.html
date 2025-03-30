@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -33,7 +33,8 @@
                             <div class="social-icons">
                                 <a href="https://www.facebook.com/bhavi.parmar.186590/" class="fb"><i
                                         class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.linkedin.com/in/bhavi-parmar/" class="linkd"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/bhavi-parmar/" class="linkd"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="https://www.instagram.com/bhaviparmar_enagic/" class="insta"><i
                                         class="fa-brands fa-instagram"></i></a>
                                 <a class="share-profile"
@@ -69,9 +70,18 @@
                 </div>
                 <div class="gcm-content mb-0">
                     <div class="col-lg-12">
-                        <p>With over a decade of experience as a <strong>Business Consultant</strong> and <strong>Sales Expert</strong>, my journey at <strong>Badabusiness Pvt. Ltd.</strong> has been about igniting growth and driving success for entrepreneurs, professionals, and students. The focus has been on solving intricate business challenges and enhancing employability through strategic consulting.</p>
-                        <p>At <strong>GLOBAL CHANGE MAKERS</strong>, our team strives to empower individuals, with a special emphasis on uplifting women entrepreneurs. Our mission to foster <strong>health</strong>, <strong>wealth</strong>, and <strong>happiness</strong> for <strong>10,000 women</strong> by 2025 is underway, as we leverage my expertise in start-up ventures and leadership to create a global impact.</p>
-                        
+                        <p>With over a decade of experience as a <strong>Business Consultant</strong> and <strong>Sales
+                                Expert</strong>, my journey at <strong>Badabusiness Pvt. Ltd.</strong> has been about
+                            igniting growth and driving success for entrepreneurs, professionals, and students. The
+                            focus has been on solving intricate business challenges and enhancing employability through
+                            strategic consulting.</p>
+                        <p>At <strong>GLOBAL CHANGE MAKERS</strong>, our team strives to empower individuals, with a
+                            special emphasis on uplifting women entrepreneurs. Our mission to foster
+                            <strong>health</strong>, <strong>wealth</strong>, and <strong>happiness</strong> for
+                            <strong>10,000 women</strong> by 2025 is underway, as we leverage my expertise in start-up
+                            ventures and leadership to create a global impact.
+                        </p>
+
                         <p>Let’s connect for any of the below services:</p>
                         <!--div class="">
                             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -235,7 +245,7 @@
                     </div>
                 </div>
                 <div class="footer-image">
-                    <img src="enagic-kangen-bhavi-parmar.png" class="img-fluid"/>
+                    <img src="enagic-kangen-bhavi-parmar.png" class="img-fluid" />
                 </div>
             </div>
         </div>
@@ -244,44 +254,45 @@
         <a href="" id="save-btn" class="btn btn-primary">Add to Contact <i class="ps-2 fa-solid fa-download"></i></a>
     </div>
 
-<script>
-    var saveBtn = document.getElementById("save-btn");
-    saveBtn.addEventListener("click", function () {
-        // Get the contact information from the website
-        var contact = {
-            name: "Bhavi Parmar",
-            phone: "7435952961",
-            email: "enagicbhavi@gmail.com"
-        };
-        // create a vcard file
-        var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nEMAIL:" + contact.email + "\nEND:VCARD";
-        var blob = new Blob([vcard], { type: "text/vcard" });
-        var url = URL.createObjectURL(blob);
+    <script>
+        var saveBtn = document.getElementById("save-btn");
+        saveBtn.addEventListener("click", function () {
+            // Get the contact information from the website
+            var contact = {
+                name: "Bhavi Parmar",
+                phone: "7435952961",
+                email: "enagicbhavi@gmail.com"
+            };
+            // create a vcard file
+            var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nEMAIL:" + contact.email + "\nEND:VCARD";
+            var blob = new Blob([vcard], { type: "text/vcard" });
+            var url = URL.createObjectURL(blob);
 
-        const newLink = document.createElement('a');
-        newLink.download = contact.name + ".vcf";
-        newLink.textContent = contact.name;
-        newLink.href = url;
+            const newLink = document.createElement('a');
+            newLink.download = contact.name + ".vcf";
+            newLink.textContent = contact.name;
+            newLink.href = url;
 
-        newLink.click();
-    });
+            newLink.click();
+        });
 
 
-    function myFunction() {
-        // Get the text field
-        var copyText = document.getElementById("myInput");
+        function myFunction() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
 
-        // Select the text field
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); // For mobile devices
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
 
-        // Copy the text inside the text field
-        navigator.clipboard.writeText(copyText.value);
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
 
-        // Alert the copied text
-        alert("Copied the text: " + copyText.value);
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
